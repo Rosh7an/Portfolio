@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/bmi.css">
+    
+</head>
+    <body>
+        <div class="image"><img align="center" src="../assets/bmi.png" alt="" height="200px" width="200px"></div>
+    <div class="main" width="50px" height="50px">
+        <div class="rectangle" >
+       
+            <form>
+                <div style="height: 50px;">
+                    <label>Weight</label>
+                    <input type="number" name="" required="" id="w" placeholder="in CM">
+                  </div>
+
+                  <div style="height: 50px;">
+                    <label>Height</label>
+                    <input type="number" name="" required="" id="h" placeholder="in CM">
+                    
+                  </div>
+
+                  <button onclick="Calculate(event)">Calculate</button>
+
+                  <div style="height: 40px;"></div>
+
+                  <div style="height: 50px;">
+                    <table>
+                    <tr>
+                        <h4>Result:</h4>
+                        <h1 id="res" style="color: white;"></h1>
+                    </tr>
+                </table>
+                    
+                  </div>
+                    
+            </form>
+    </div>
+</div>
+    <script>
+        
+        function Calculate(event)
+       {
+        alert("Calculating the BMI");
+        var a=document.getElementById("w").value;
+        var b=document.getElementById("h").value;
+        var c=(a /((b*b)/10000)).toFixed(2);
+
+        if (c<18.6) {
+            res.innerHTML="Under Weight";
+        }
+        else if (c >= 18.6 && c<24.9) {
+            res.innerHTML="Normal Weight";
+        }
+        else {
+            res.innerHTML="Over Weight";
+        }
+        
+       }
+        
+    
+    </script>
+    
+</body>
+</html>
