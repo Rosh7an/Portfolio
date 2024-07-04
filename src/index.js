@@ -6,13 +6,16 @@ import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "./theme/theme";
 import { ThemeEditorProvider } from "@hypertheme-editor/chakra-ui";
+import { HashRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ChakraProvider theme={theme}>
     <React.StrictMode>
       <ThemeEditorProvider>
-        <App />
+        <HashRouter>
+          <App />
+        </HashRouter>
       </ThemeEditorProvider>
     </React.StrictMode>
   </ChakraProvider>
