@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.c98d4e97.css",
-    "main.js": "/Portfolio/static/js/main.1f3e4bf3.js",
+    "main.js": "/Portfolio/static/js/main.249af13a.js",
     "static/js/787.e791029f.chunk.js": "/Portfolio/static/js/787.e791029f.chunk.js",
     "static/media/dashboard.gif": "/Portfolio/static/media/dashboard.48011af8a598cfeec00f.gif",
     "static/media/diabeticRetinopathy.png": "/Portfolio/static/media/diabeticRetinopathy.c4201d5f041ac80bf065.png",
@@ -46,11 +46,11 @@
     "static/media/css3.svg": "/Portfolio/static/media/css3.d51e893b4eecd56b38b570e498bd1712.svg",
     "index.html": "/Portfolio/index.html",
     "main.c98d4e97.css.map": "/Portfolio/static/css/main.c98d4e97.css.map",
-    "main.1f3e4bf3.js.map": "/Portfolio/static/js/main.1f3e4bf3.js.map",
+    "main.249af13a.js.map": "/Portfolio/static/js/main.249af13a.js.map",
     "787.e791029f.chunk.js.map": "/Portfolio/static/js/787.e791029f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c98d4e97.css",
-    "static/js/main.1f3e4bf3.js"
+    "static/js/main.249af13a.js"
   ]
 }
