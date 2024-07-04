@@ -10,15 +10,15 @@ import { HashRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <ChakraProvider theme={theme}>
-    <React.StrictMode>
-      <ThemeEditorProvider>
-        <HashRouter>
+  <HashRouter>
+    <ChakraProvider theme={theme}>
+      <React.StrictMode>
+        <ThemeEditorProvider>
           <App />
-        </HashRouter>
-      </ThemeEditorProvider>
-    </React.StrictMode>
-  </ChakraProvider>
+        </ThemeEditorProvider>
+      </React.StrictMode>
+    </ChakraProvider>
+  </HashRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
