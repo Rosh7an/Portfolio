@@ -5,14 +5,14 @@ Self Coded Portfolio Website made using React JS and Chakra UI.
 
 <p align="center"> 
   <kbd>
-    <a href="https://roshanj15.onrender.com/" target="_blank"><img src="./images/intro.jpg" >
+    <a href="https://roshanj-portfolio.surge.sh/" target="_blank"><img src="./images/intro.png" >
   </a>
   </kbd>
 </p>
 
 ## Live Demo 
 
-- Click [here](https://roshanj15.onrender.com/) to view the live demo.
+- Click [here](https://roshanj-portfolio.surge.sh/) to view the live demo.
 
 ## Features 📋
 
@@ -37,7 +37,7 @@ Self Coded Portfolio Website made using React JS and Chakra UI.
 - [React.js](https://react.dev/)
 - [Chakra UI](https://chakra-ui.com/)
 
-## Screenshots
+<!-- ## Screenshots
 
 ### Laptop Views
 
@@ -46,16 +46,16 @@ Self Coded Portfolio Website made using React JS and Chakra UI.
     <a href="https://roshanj15.onrender.com/" target="_blank"><img src="./images/laptopView.jpg">
   </a>
   </kbd>
-</p>
+</p> -->
 
-### Mobile Views
+<!-- ### Mobile Views
 
 <div align="center"> 
   <kbd>
  <img src="./images/mobile-view-1.jpg" width="400" height="400">
  <img src="./images/mobile-view-2.jpg" width="400" height="400">
   </kbd>
-</div>
+</div> -->
 
 ## Getting Started ⚡ :-
 

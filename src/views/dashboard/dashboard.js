@@ -19,26 +19,35 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 export default function Dashboard() {
   const [quote, setQuote] = useState("");
   const [loadedDashboardimg, setloadedDashboardimg] = useState(false);
+  const [randomQuotes, setRandomQuotes] = useState([])
   const styles = useStyleConfig("Card");
   let highlightTextColor = useColorModeValue("lightblue.100", "lightpeach.100");
   let textColor = useColorModeValue("gray.700", "white");
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-  });
+  },[]);
 
   useEffect(() => {
     axios
-      .get("https://api.quotable.io/random")
+      .get("https://type.fit/api/quotes")
       .then((response) => {
-        let content = response.data.content;
-        setQuote(content);
+        setRandomQuotes(response.data);
       })
       .catch((error) => {
-        setQuote("");
         console.error("Error fetching quote:", error);
-      });
-  }, []);
+      });      
+    }, []);
+    
+    useEffect(()=>{
+      const handleRandomQuote = () =>{
+      console.log(randomQuotes);
+      let randomNumber=Math.floor(Math.random() * randomQuotes?.length) + 1;
+      const quote = randomQuotes[randomNumber]?.text;
+      setQuote(quote);
+    }
+   handleRandomQuote();
+  },[randomQuotes?.length])
 
   const getActiveRoute = (routes) => {
     for (let i = 0; i < routes.length; i++) {
