@@ -37,32 +37,13 @@ Self Coded Portfolio Website made using React JS and Chakra UI.
 - [React.js](https://react.dev/)
 - [Chakra UI](https://chakra-ui.com/)
 
-<!-- ## Screenshots
-
-### Laptop Views
-
-<p align="center"> 
-  <kbd>
-    <a href="https://roshanj15.onrender.com/" target="_blank"><img src="./images/laptopView.jpg">
-  </a>
-  </kbd>
-</p> -->
-
-<!-- ### Mobile Views
-
-<div align="center"> 
-  <kbd>
- <img src="./images/mobile-view-1.jpg" width="400" height="400">
- <img src="./images/mobile-view-2.jpg" width="400" height="400">
-  </kbd>
-</div> -->
 
 ## Getting Started ⚡ :-
 
 **1. Clone this repo by running the following command :-**
 
 ```bash
- git clone https://github.com/roshanj.git
+ git clone https://github.com/Rosh7an/Portfolio.git
 ```
 
 **2. Now Install all the required packages by running the following commands :-**
@@ -81,10 +62,7 @@ Self Coded Portfolio Website made using React JS and Chakra UI.
 
 ## Deployment 📦
 
-This Web Application is deployed to Render.
-
-You could also host directly with Render by linking your own repository.
-
+This Web Application is deployed to Surge.
 
 ## License 📄
 This project is licensed under the Apache-2.0 License - see the [LICENSE.md](./LICENSE) file for details
