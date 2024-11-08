@@ -262,7 +262,7 @@ export default function About() {
             </Box>
             <Text textAlign="center">Songs and Dance</Text>
             <Text color={textColorPrimary} textAlign="center" mt="5px">
-              ChatGPT Dancing to cinematic fast beat songs is where I find my
+              Dancing to cinematic fast beat songs is where I find my
               rhythm and passion. The pulsating energy of these tracks ignites
               my soul, propelling me into movements that express joy and
               exhilaration. Whether it's the thrill of action-packed sequences
