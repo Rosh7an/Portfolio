@@ -30,9 +30,10 @@ export default function Dashboard() {
 
   useEffect(() => {
     axios
-      .get("https://type.fit/api/quotes")
+      .get("https://zenquotes.io/api/quotes")
       .then((response) => {
         setRandomQuotes(response.data);
+        console.log("data",response.data)
       })
       .catch((error) => {
         console.error("Error fetching quote:", error);
