@@ -29,22 +29,27 @@ export default function Dashboard() {
   },[]);
 
   useEffect(() => {
-    axios
-      .get("https://zenquotes.io/api/quotes")
-      .then((response) => {
-        setRandomQuotes(response.data);
-        console.log("data",response.data)
-      })
-      .catch((error) => {
+    const fetchQuotes = async () => {
+      try {
+        const proxyUrl = "https://thingproxy.freeboard.io/fetch/";
+        const targetUrl = encodeURIComponent("https://zenquotes.io/api/quotes");
+        const response = await axios.get(`${proxyUrl}${targetUrl}`);
+
+        // Parse the JSON string from the proxy response
+        const parsedData = JSON.parse(response.data.contents);
+        setRandomQuotes(parsedData);
+      } catch (error) {
         console.error("Error fetching quote:", error);
-      });      
-    }, []);
+      }
+    };
+
+    fetchQuotes();
+  }, []);
     
     useEffect(()=>{
       const handleRandomQuote = () =>{
-      console.log(randomQuotes);
       let randomNumber=Math.floor(Math.random() * randomQuotes?.length) + 1;
-      const quote = randomQuotes[randomNumber]?.text;
+      const quote = randomQuotes[randomNumber]?.q;
       setQuote(quote);
     }
    handleRandomQuote();
@@ -149,7 +154,7 @@ export default function Dashboard() {
             cursor="default"
             mt="20px"
           >
-            Random Quote
+            { quote? "Random Quote" : " Quote"}
             <Box
               fontSize={{ sm: "1em", md: "1.3em", xl: "1.3em" }}
               color={highlightTextColor}
@@ -162,7 +167,7 @@ export default function Dashboard() {
                   }}
                 />
               ) : (
-                <span>|</span>
+                <span>"Sometimes the idea behind a program is one small creative effort."</span>
               )}
             </Box>
           </Box>
